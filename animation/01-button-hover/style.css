@@ -19,6 +19,7 @@ button {
 }
 
 button:hover {
-  transition: all 1s;
-  scale: 1.3;
+  /* transition: all 1s ease-out; */
+  transition: margin-right 2s;
+  transform: scale(1.3);
 }
