@@ -20,3 +20,12 @@ p {
     width: 100px;
     /* padding-bottom: 10px; */
 }
+
+div, p {
+    background-color: beige;
+}
+
+.div .child {
+    font-weight: bolder;
+    font-size: 50px;
+}
