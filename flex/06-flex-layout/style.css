@@ -52,7 +52,6 @@ a, li {
 }
 
 .footer {
-  display: flex;
   background-color: #eeeeee;
   padding: 10px;
   margin-top: auto;
