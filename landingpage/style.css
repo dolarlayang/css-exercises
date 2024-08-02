@@ -1,13 +1,10 @@
-html {
+body {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-}
-
-body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 /* Spaces out the elements on the headerSection */
@@ -17,11 +14,6 @@ h1, p, button {
 
 li {
     list-style-type: none;
-}
-
-.headerLinks li a {
-    text-decoration: none;
-    padding: 10px;
 }
 
 ul {
@@ -40,7 +32,10 @@ footer {
 }
 
 .headerTitle {
-    font: 48px bolder #f9faf8;
+    /* font: 48px bolder */
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
 }
 
 .headerContainer {
@@ -48,26 +43,32 @@ footer {
     flex-direction: column;
     background-color: #1F2937;
     align-items: center;
-    /* min-height: 20vh; */
-    /* flex: 1; */
     color: white;
 }
 
+.headerLinks li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
 /* Container for header logo and links */
-.headerLogoAndLinks {
+.headerLogoAndLinksContainer {
     display: flex;
     margin-top: 10px;
+    width: 75vw;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .content {
     display: flex;
-    gap: 40px;
-    align-items: center;
+    width: 75vw;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
 }
 
 .headerImage {
-    width: 400px;
+    width: 500px;
 }
 
 .signupHeader {
@@ -85,17 +86,17 @@ footer {
     /* padding: 30px; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 10px;
     background-color: white;
-    /* flex: 1; */
+    flex: 1;
+    align-items: center;
 }
 
 .boxes {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    width: 75vw;
 }
 
 .box {
@@ -109,15 +110,25 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     /* padding: 15px; */
     flex: 1;
 }
 
+.quoteContent {
+    display: flex;
+    flex-direction: column;
+    /* width: 50vw; */
+    width: 75vw;
+}
+
 .callToActionSection {
+    padding: 10px;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     align-items: center;
+    flex: 1;
+
 }
 
 .callToActionBox {
@@ -125,14 +136,21 @@ footer {
     border-radius: 10px;
     background-color: #3882F6;
     color: white;
-    /* display: flex;
-    flex-direction: column; */
-    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    font-size: 18px;
+    border-style: none;
+    width: 75vw;
 }
 
-.signUpSection {
-    display: flex;
+.signup {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    background-color: #3882F6;
 }
+
 
 p#quoteStyle {
     text-align: center;
@@ -150,6 +168,5 @@ p#setQuoteAuthorMargin {
 }
 
 #footerMargin {
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
 }
