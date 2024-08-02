@@ -8,11 +8,20 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #1F2937;
+}
+
+/* Spaces out the elements on the headerSection */
+h1, p, button {
+    margin: 5px;
 }
 
 li {
     list-style-type: none;
+}
+
+.headerLinks li a {
+    text-decoration: none;
+    padding: 10px;
 }
 
 ul {
@@ -21,25 +30,34 @@ ul {
     justify-content: space-between;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
+    height: 50px;
+    margin-top: auto;
+}
+
+.headerTitle {
+    font: 48px bolder #f9faf8;
+}
+
 .headerContainer {
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    background-color: #1F2937;
     align-items: center;
-    height: 300px;
+    /* min-height: 20vh; */
+    /* flex: 1; */
+    color: white;
 }
 
+/* Container for header logo and links */
 .headerLogoAndLinks {
     display: flex;
     margin-top: 10px;
     align-items: center;
-}
-
-.headerLinks {
-    display: flex;
-    gap: 10px;
-    color: white;
-
 }
 
 .content {
@@ -48,19 +66,15 @@ ul {
     align-items: center;
 }
 
-button {
-    border-radius: 5px;
-    color: white;
-    background-color: lightblue;
-    border-style: none;
-}
-
 .headerImage {
     width: 400px;
 }
 
-h1, p, button {
-    margin: 5px;
+.signupHeader {
+    border-radius: 5px;
+    color: white;
+    background-color: #3882F6;
+    border-style: none;
 }
 
 .setImageSize {
@@ -68,18 +82,74 @@ h1, p, button {
 }
 
 .randomSection {
-    margin-top: 30px;
+    /* padding: 30px; */
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    background-color: white;
+    /* flex: 1; */
 }
 
-/* .boxes {
+.boxes {
     display: flex;
-} */
+    gap: 15px;
+    flex-wrap: wrap;
+}
 
 .box {
     text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.quoteSection {
+    background-color: #E5E7EB;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 15px; */
+    flex: 1;
+}
+
+.callToActionSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.callToActionBox {
+    border: 2px solid blue;
+    border-radius: 10px;
+    background-color: #3882F6;
+    color: white;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 20px;
+}
+
+.signUpSection {
+    display: flex;
+}
+
+p#quoteStyle {
+    text-align: center;
+    font-size: 32px;
+    font-weight: light;
+    font-style: italic;
+}
+
+
+p#setQuoteAuthorMargin {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: auto;
+    /* flex-shrink: 0; */
+}
+
+#footerMargin {
+    position: absolute;
+    bottom: 0;
 }
