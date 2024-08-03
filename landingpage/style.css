@@ -44,6 +44,7 @@ footer {
     background-color: #1F2937;
     align-items: center;
     color: white;
+    
 }
 
 .headerLinks li a {
@@ -52,12 +53,19 @@ footer {
 }
 
 /* Container for header logo and links */
-.headerLogoAndLinksContainer {
+.headerLogoAndLinks {
     display: flex;
     margin-top: 10px;
     width: 75vw;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.headerLogoAndLinks h1 {
+    /* margin-right: auto; */
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
 }
 
 .content {
@@ -142,13 +150,16 @@ footer {
     font-size: 18px;
     border-style: none;
     width: 75vw;
+    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .signup {
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 5px;
     color: white;
     background-color: #3882F6;
+    font-size: 18px;
 }
 
 
@@ -169,4 +180,8 @@ p#setQuoteAuthorMargin {
 
 #footerMargin {
     margin-top: auto;
+}
+
+#callToActionFirstSentence {
+    font-weight: bolder;
 }
